@@ -20,10 +20,12 @@ alias connect="ssh -Y ry2zhou@linux.student.cs.uwaterloo.ca"
 
 # Docker
 alias dc="docker-compose"
+alias config='/usr/bin/git --git-dir=/home/rock/.cfg/ --work-tree=/home/rock'
 
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --glob "!node_modules/*" --glob "!tags" --glob "!target/*"'
 
 # Customize Terminal
 export PS1="\[\033[m\]\033[33;01m\h\[\033[32m\] \[\033[33;1m\]\w\[\033[m\] "
 export CLICOLOR=1
-alias config='/usr/bin/git --git-dir=/home/rock/.cfg/ --work-tree=/home/rock'
+
+export PATH="$PATH:$HOME/.scripts"
