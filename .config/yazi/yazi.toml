@@ -1,0 +1,15 @@
+[preview]
+max-width=1000
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true },
+]
+play = [
+	{ run = '/Applications/VLC.app/Contents/MacOS/VLC "$@"' }
+]
+
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "glow" },
+]
