@@ -12,3 +12,9 @@ desc = "Maximize or restore preview"
 on   = "F"
 run  = "plugin smart-filter"
 desc = "Smart filter"
+
+# close inputs with one esc
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"
